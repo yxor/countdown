@@ -63,7 +63,7 @@ class Game:
     
     def _verify_input(self, solution : str):
         # verify that the input doesn't contain any other chars we dont want
-        if not re.match(r"^[\d\+\-\/\*\(\) ]*$", solution):
+        if not re.match(r"^[\d\+\-\/\*\(\) ]+$", solution):
             return False
 
         # split the input to the individual numbers
